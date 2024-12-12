@@ -1,7 +1,14 @@
 function removeDuplicates(array) {
-  // escreva seu código aqui
+  let uniqueNumbers = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!uniqueNumbers.includes(array[i])) {
+      uniqueNumbers.push(array[i]);
+    }
+  }
+
+  return uniqueNumbers;
 }
 
 module.exports = {
-  removeDuplicates
-}
+  removeDuplicates,
+};

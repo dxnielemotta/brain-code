@@ -1,17 +1,13 @@
 function printInnerElements(array) {
   if (array.length < 3) {
     console.log("Tamanho do array inválido");
-  } else {
-    array.pop();
-    array.shift();
+    return;
+  }
 
-    for (let i = 0; i < array.length; i++) {
-      console.log(array[i]);
-    }
+  for (let i = 1; i < array.length - 1; i++) {
+    console.log(array[i]);
   }
 }
-
-printInnerElements([2, 3, 7, 8]);
 
 module.exports = {
   printInnerElements,
